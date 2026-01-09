@@ -68,6 +68,7 @@ function Product() {
                 <p className="text-lg md:text-xl text-gray-300 mt-4 md:max-w-3xl">
                     We bring you innovative technologies to support your business—from modern POS systems, ticketing solutions, and CRM to professional websites—all in one platform!
                 </p>
+
                 {/* Mobile Carousel View */}
                 <div className="md:hidden">
                     <Swiper
@@ -124,6 +125,7 @@ function Product() {
                         </h1>
                     </a>
                 </div>
+                
             </div>
         </div>
     );

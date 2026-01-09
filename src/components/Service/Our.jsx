@@ -1,5 +1,12 @@
 import { motion } from "framer-motion";
-import { FaGlobe, FaLaptopCode, FaMobileAlt, FaCogs } from "react-icons/fa";
+import {
+  FaGlobe,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaCogs,
+  FaShoppingCart,
+  FaLayerGroup,
+} from "react-icons/fa";
 
 const viewportSettings = { once: true, amount: 0.2 };
 
@@ -15,31 +22,45 @@ const fadeInUp = {
 const serviceData = [
   {
     service: "Landing Page Development",
+    icon: <FaLayerGroup size={38} className="text-cyan-600" />,
+    bg: "bg-white",
+    answer:
+      "High-converting landing pages designed to capture attention, deliver clear messaging, and drive user actions. Optimized for speed, SEO, and marketing campaigns.",
+  },
+  {
+    service: "Website Development",
     icon: <FaGlobe size={38} className="text-cyan-600" />,
     bg: "bg-white",
     answer:
-      "We design engaging, responsive landing pages focused on conversion. Each page is crafted to strengthen your brand identity and create a strong first impression.",
+      "Professional company websites built with clean design, responsive layouts, and scalable architecture — suitable for corporate profiles, portfolios, and content-driven sites.",
+  },
+  {
+    service: "E-commerce Development",
+    icon: <FaShoppingCart size={38} className="text-cyan-600" />,
+    bg: "bg-white",
+    answer:
+      "Robust e-commerce solutions with secure payments, product management, and smooth checkout flows to help you sell online efficiently and scale your business.",
   },
   {
     service: "Web App Development",
     icon: <FaLaptopCode size={38} className="text-cyan-600" />,
     bg: "bg-white",
     answer:
-      "We build scalable and fast web applications using technologies like React, Laravel, and Node.js — ready to support your business systems.",
+      "Scalable web applications built using modern technologies like React, Laravel, and Node.js — ideal for dashboards, internal systems, and SaaS platforms.",
   },
   {
     service: "Mobile App Development",
     icon: <FaMobileAlt size={38} className="text-cyan-600" />,
     bg: "bg-white",
     answer:
-      "We develop native and hybrid mobile apps (iOS & Android) that are intuitive, modern, and easy to manage with an agile approach.",
+      "Native and cross-platform mobile apps for iOS and Android, focused on performance, usability, and seamless user experience across devices.",
   },
   {
     service: "Custom App Development",
     icon: <FaCogs size={38} className="text-cyan-600" />,
     bg: "bg-white",
     answer:
-      "Custom application solutions tailored to your business needs — from discovery to maintenance. We act as your reliable technology partner.",
+      "Tailor-made application solutions designed around your business workflows — from planning and development to long-term maintenance and optimization.",
   },
 ];
 

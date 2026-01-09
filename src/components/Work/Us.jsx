@@ -112,7 +112,7 @@ const workItems = [
   },
 ];
 
-const itemsPerPage = 6;
+const itemsPerPage = 4;
 
 function Us() {
   const [currentPage, setCurrentPage] = useState(1);
@@ -137,7 +137,7 @@ function Us() {
 
       {/* Cards */}
       <div className="space-y-4 md:space-y-8 md:max-w-7xl mx-auto">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {paginatedItems.map((item, index) => (
             <motion.div
               key={index}
@@ -145,7 +145,7 @@ function Us() {
               initial="hidden"
               whileInView="visible"
               viewport={viewportSettings}
-              className="bg-gray-300 rounded-3xl h-60 md:h-80 flex flex-col items-center text-center overflow-hidden"
+              className="bg-gray-300 rounded-3xl h-60 md:h-96 flex flex-col items-center text-center overflow-hidden"
             >
               <a
                 href={item.link}
@@ -154,7 +154,7 @@ function Us() {
                 className="w-full h-full flex flex-col items-center"
               >
                 <img
-                  className="h-40 object-cover md:object-fill md:h-48 w-full rounded-t-3xl"
+                  className="h-40 object-cover md:object-fill md:h-64 w-full rounded-t-3xl"
                   src={item.img}
                   alt={item.title}
                 />

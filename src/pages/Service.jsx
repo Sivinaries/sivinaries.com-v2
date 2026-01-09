@@ -8,6 +8,7 @@ import Testi from '../components/Home/Testi';
 import Faq from '../components/Home/Faq';
 import Ready from '../components/Home/Ready';
 import Map from '../components/Map';
+import Process from "../components/Service/Process";
 
 function Service() {
     return (
@@ -60,6 +61,7 @@ function Service() {
                 <Whatsapp />
                 <Hero />
                 <Our />
+                <Process />
                 <Testi />
                 <Faq />
                 <Ready />

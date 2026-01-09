@@ -2,32 +2,57 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import { GrTechnology } from "react-icons/gr";
-import { FaGlobe, FaLaptopCode, FaMobileAlt, FaCogs } from "react-icons/fa";
+import {
+  FaGlobe,
+  FaLaptopCode,
+  FaMobileAlt,
+  FaCogs,
+  FaShoppingCart,
+  FaLayerGroup,
+} from "react-icons/fa";
 
 const serviceData = [
   {
     service: "Landing Page Development",
-    icon: <FaGlobe />,
+    icon: <FaLayerGroup className="text-white text-xl md:text-3xl" />,
+    bg: "bg-white",
     answer:
-      "We design engaging, responsive, and conversion-optimized landing pages to increase your business visibility.",
+      "High-converting landing pages designed to capture attention, deliver clear messaging, and drive user actions. Optimized for speed, SEO, and marketing campaigns.",
+  },
+  {
+    service: "Website Development",
+    icon: <FaGlobe className="text-white text-xl md:text-3xl" />,
+    bg: "bg-white",
+    answer:
+      "Professional company websites built with clean design, responsive layouts, and scalable architecture — suitable for corporate profiles, portfolios, and content-driven sites.",
+  },
+  {
+    service: "E-commerce Development",
+    icon: <FaShoppingCart className="text-white text-xl md:text-3xl" />,
+    bg: "bg-white",
+    answer:
+      "Robust e-commerce solutions with secure payments, product management, and smooth checkout flows to help you sell online efficiently and scale your business.",
   },
   {
     service: "Web App Development",
-    icon: <FaLaptopCode />,
+    icon: <FaLaptopCode className="text-white text-xl md:text-3xl" />,
+    bg: "bg-white",
     answer:
-      "We build interactive, fast, and secure web applications using modern technologies to support your business growth.",
+      "Scalable web applications built using modern technologies like React, Laravel, and Node.js — ideal for dashboards, internal systems, and SaaS platforms.",
   },
   {
     service: "Mobile App Development",
-    icon: <FaMobileAlt />,
+    icon: <FaMobileAlt className="text-white text-xl md:text-3xl" />,
+    bg: "bg-white",
     answer:
-      "We develop high-performance mobile apps for both iOS and Android with intuitive user experiences.",
+      "Native and cross-platform mobile apps for iOS and Android, focused on performance, usability, and seamless user experience across devices.",
   },
   {
     service: "Custom App Development",
-    icon: <FaCogs />,
+    icon: <FaCogs className="text-white text-xl md:text-3xl" />,
+    bg: "bg-white",
     answer:
-      "We offer custom application solutions tailored to your business needs, from planning to implementation.",
+      "Tailor-made application solutions designed around your business workflows — from planning and development to long-term maintenance and optimization.",
   },
 ];
 
